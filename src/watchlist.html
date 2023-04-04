@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Homepage - The Movie Watchlist</title>
+  </head>
+  <body class="font-['Roboto'] md:bg-[#EBEAEA]">
+    <!-- Nav -->
+    <nav
+      class="sticky top-0 flex justify-between items-center md:items-start h-[185px] bg-white md:bg-[#EBEAEA] p-5 pb-0 md:px-20 md:pt-12 gap-8"
+    >
+      <h1 class="text-[30px] font-bold" style="font-family: Poppins">
+        The <br />
+        Movie <br />
+        Watchlist
+      </h1>
+
+      <!-- Search Bar Desktop -->
+      <input
+        type="text"
+        class="hidden md:flex justify-center items-center text-center text-xl text-black placeholder:text-black w-full max-w-[630px] bg-[#D9D9D9] h-14 rounded-full"
+        placeholder="Search a movie or a series"
+        id="search-input"
+      />
+      <!-- Buttons -->
+      <div class="flex gap-4">
+        <!-- Mobile Button -->
+        <button
+          class="flex justify-center items-center text-[20px] bg-[#D9D9D9] w-10 h-10 rounded-full md:hidden"
+          id="search-button"
+        >
+          <img
+            class="h-5"
+            src="../assets/magnifying-glass.png"
+            alt="magnifying-glass"
+          />
+        </button>
+        <button
+          class="flex justify-center items-center text-[20px] bg-[#D9D9D9] w-10 h-10 rounded-full md:hidden"
+          id="wishlist-button"
+        >
+          <img
+            class="h-5"
+            src="../assets/bookmark.svg"
+            alt="magnifying-glass"
+          />
+        </button>
+        <button
+          class="hidden justify-center items-center text-[20px] bg-[#D9D9D9] w-10 h-10 rounded-full md:hidden"
+          id="plus-button"
+        >
+          <img class="h-5" src="../assets/Plus.svg" alt="magnifying-glass" />
+        </button>
+        <!-- Desktop Watchlist Button -->
+        <button
+          class="hidden justify-center items-center text-xl font-bold bg-[#D9D9D9] w-52 h-14 rounded-[20px] md:flex"
+          id="watchlist-button"
+        >
+          <img
+            class="h-5"
+            src="../assets/bookmark.svg"
+            alt="magnifying-glass"
+          />
+          &nbsp; Watchlist
+        </button>
+      </div>
+    </nav>
+    <!-- Search Mobile -->
+    <div
+      id="search-menu"
+      class="hidden flex-col bg-white md:bg-[#EBEAEA] justify-start items-center p-5 md:p-20"
+    >
+      <!-- Search Bar Mobile -->
+      <input
+        type="text"
+        class="block md:hidden justify-center items-center text-center text-xl text-black placeholder:text-black w-full max-w-[630px] bg-[#D9D9D9] h-14 rounded-[20px]"
+        placeholder="Search a movie or a series"
+        id="search-input"
+      />
+      <!-- Search Result Mobile & Desktop-->
+      <div
+        id="search-result"
+        class="hidden grid-cols-2 md:grid-cols-6 gap-5 py-10"
+      >
+        <a
+          class="bg-gray-300 min-w-[155px] min-h-[235px] rounded-[20px]"
+          href="#"
+        ></a>
+        <a
+          class="bg-gray-300 min-w-[155px] min-h-[235px] rounded-[20px]"
+          href="#"
+        ></a>
+        <a
+          class="bg-gray-300 min-w-[155px] min-h-[235px] rounded-[20px]"
+          href="#"
+        ></a>
+        <a
+          class="bg-gray-300 min-w-[155px] min-h-[235px] rounded-[20px]"
+          href="#"
+        ></a>
+        <a
+          class="bg-gray-300 min-w-[155px] min-h-[235px] rounded-[20px]"
+          href="#"
+        ></a>
+        <a
+          class="bg-gray-300 min-w-[155px] min-h-[235px] rounded-[20px]"
+          href="#"
+        ></a>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div
+      id="content"
+      class="px-5 md:px-20 md:flex-wrap md:justify-between md:gap-x-16"
+    >
+      <!-- Currently Watching -->
+      <section class="mb-10 md:w-full overflow-x-hidden col-start-1 col-end-2">
+        <div class="flex flex-wrap gap-5 py-4 scrollbar-hide" id="watchlist">
+          <!-- loadWatchlist() -->
+        </div>
+      </section>
+    </div>
+    <!-- Script -->
+    <script src="./navbar.js"></script>
+    <script src="./watchlist.js"></script>
+  </body>
+</html>

@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
-    <title>Login - The Movie Watchlist</title>
+    <title>Register - The Movie Watchlist</title>
   </head>
   <body class="flex justify-center items-center h-screen font-['Roboto']">
     <!-- Container -->
@@ -32,21 +32,33 @@
           id="username-input"
         />
         <input
+          type="email"
+          class="w-full h-14 p-4 bg-[#D9D9D9] placeholder:text-black text-xl text-center lg:text-start rounded-[20px]"
+          placeholder="Email"
+          id="email-input"
+        />
+        <input
           type="password"
           class="w-full h-14 p-4 bg-[#D9D9D9] placeholder:text-black text-xl text-center lg:text-start rounded-[20px]"
           placeholder="Password"
           id="password-input"
         />
+        <input
+          type="password"
+          class="w-full h-14 p-4 bg-[#D9D9D9] placeholder:text-black text-xl text-center lg:text-start rounded-[20px]"
+          placeholder="Confirm Password"
+          id="confirm-password-input"
+        />
         <button
           class="w-full h-14 text-2xl font-bold text-white bg-[#37C6F3] active:bg-[#37aef3] rounded-[20px] mt-8 mb-3"
           id="button-submit"
         >
-          Login
+          Register
         </button>
       </form>
       <span class="text-[#6D6D6D] font-md ml-4"
-        >You don't have a account?
-        <a href="./register.html" class="font-bold">SignUp</a></span
+        >Already have an account?
+        <a href="./signup.html" class="font-bold">Login</a></span
       >
     </div>
   </body>
