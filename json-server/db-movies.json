@@ -1,0 +1,508 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Kumar",
+      "email": "Kumar@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "username": "jamal",
+      "email": "jamal@gmail.com",
+      "password": "qwerty"
+    },
+    {
+      "id": 3,
+      "username": "Abdul",
+      "email": "dobleh1@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 4,
+      "username": "joko",
+      "password": "tes123",
+      "email": "joko@gmail.com"
+    },
+    {
+      "username": "cihuy123",
+      "password": "cihuy123",
+      "email": "cihuy123@gmail.com",
+      "id": 5
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Avatar",
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/16625437697033_405x594.jpg",
+      "synopsis": "Avatar akan kembali ke layar lebar.Seorang Marinir lumpuh dikirim ke bulan Pandora untuk menjalani misi khusus namun, ia justru dilema antara mengikuti perintah atau melindungi dunia baru yang pelan-pelan ia panggil rumah",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "production": "20th Century Studios",
+      "trailer": "https://www.youtube.com/embed/NZrX_ES93JA",
+      "rating": 8.5,
+      "isWatch": false,
+      "isPrevious": false
+    },
+    {
+      "id": 2,
+      "title": "One Piece Film: Red",
+      "image": "https://m.media-amazon.com/images/M/MV5BNDBhM2IxMzItOTdmZi00NmMzLWFlNTgtN2E2MDRjODU4NzEzXkEyXkFqcGdeQXVyODMyNTM0MjM@._V1_FMjpg_UX1000_.jpg",
+      "synopsis": "Untuk pertama kalinya, Uta - penyanyi paling dicintai akan mengungkapkan dirinya kepada dunia di konser langsungnya. Suara yang ditunggu-tunggu oleh seluruh dunia akan segera bergema.",
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Fantasy"
+      ],
+      "production": "20th Century Studios",
+      "trailer": "https://www.youtube.com/embed/89JWRYEIG-s",
+      "rating": 8.5,
+      "isWatch": false,
+      "isPrevious": false
+    },
+    {
+      "id": 3,
+      "title": "Mencuri Raden Saleh",
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/166004235118479_405x594.jpg",
+      "synopsis": "Piko, mahasiswa seni rupa yang mencari uang dengan memalsukan lukisan untuk membebaskan sang ayah dari penjara tiba-tiba mendapat tawaran mencuri karya maestro Raden Saleh yang dijaga ketat di Istana Negara. Mengikuti rencana, Piko membentuk tim yang berisi Ucup (hacker), Sarah (atlet bela diri), Gofar (mekanik), Tuktuk (pembalap liar) dan Fella (bandar judi kampus). Masing-masing mengincar uang yang ditawarkan sebagai imbalan dari pencurian tersebut.     Pelaksanaan rencana mereka dihadapkan dengan begitu banyak rintangan yang berpeluang merenggut hal-hal berharga yang dimiliki; hubungan percintaan, persahabatan, hingga keluarga mereka. Di tengah upaya melancarkan misi pencurian penuh risiko tersebut, mereka tidak tahu bahwa ada ancaman besar di balik pencurian lukisan tersebut.",
+      "genre": [
+        "Drama,Action"
+      ],
+      "production": "20th Century Studios",
+      "trailer": "https://www.youtube.com/embed/DN3sRz_veBU",
+      "rating": 8.5,
+      "isWatch": false,
+      "isPrevious": false
+    },
+    {
+      "id": 4,
+      "title": "The Shawshank Redemption",
+      "image": "https://th.bing.com/th/id/OIP.w0SK_ZRdaWbnC2goV4kbYAHaLH?w=115&h=180&c=7&r=0&o=5&pid=1.7",
+      "year": 1994,
+      "synopsis": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "genre": [
+        "Drama"
+      ],
+      "trailer": "",
+      "rating": 9.3,
+      "isWatched": false,
+      "isPrevious": false
+    },
+    {
+      "id": 5,
+      "title": "The Godfather",
+      "image": "https://th.bing.com/th/id/OIP._5fxLczZe-Orf76zbPUWSAHaLH?w=120&h=180&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "trailer": "",
+      "runtime": 175,
+      "rating": 9.2,
+      "isWatched": false
+    },
+    {
+      "id": 6,
+      "title": "The Dark Knight",
+      "image": "https://th.bing.com/th/id/OIP.NN9rKH-vZbFgtH4FuoW7OwHaLH?w=115&h=180&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "year": 2008,
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "trailer": "https://www.youtube.com/embed/EXeTwQWrcwY",
+      "rating": 9,
+      "isWatched": false
+    },
+    {
+      "id": 7,
+      "title": "The Dark Knight Rises",
+      "image": "https://th.bing.com/th/id/OIP.D7tKNbnOXs-jFkXVKkq8pQHaLH?w=131&h=196&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "Bane, an imposing terrorist, attacks Gotham City and disrupts its eight-year-long period of peace. This forces Bruce Wayne to come out of hiding and don the cape and cowl of Batman again.",
+      "year": 2008,
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "trailer": "https://www.youtube.com/embed/GokKUqLcvD8",
+      "imdb_rating": 9,
+      "isWatched": false
+    },
+    {
+      "id": 8,
+      "title": "Batman Begins",
+      "image": "https://th.bing.com/th/id/OIP.yFTkE2zLgrXuK1nTYLqBZAHaJ3?w=138&h=184&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "After witnessing his parents' death, Bruce learns the art of fighting to confront injustice. When he returns to Gotham as Batman, he must stop a secret society that intends to destroy the city.",
+      "year": 2008,
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "trailer": "https://www.youtube.com/embed/neY2xVmOfUM",
+      "imdb_rating": 8.2,
+      "isWatched": false
+    },
+    {
+      "id": 9,
+      "title": "Avengers: Endgame",
+      "image": "https://th.bing.com/th/id/OIP.KNfIqaD92jvecpbxNWWQ4wHaJ4?w=139&h=185&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.",
+      "year": 2019,
+      "genre": [
+        "Action",
+        "Adventure",
+        "superhero"
+      ],
+      "trailer": "https://www.youtube.com/embed/TcMBFSGVi1c",
+      "imdb_rating": 8.4,
+      "isWatched": false
+    },
+    {
+      "id": 10,
+      "title": "Avengers: Infinity War",
+      "image": "https://th.bing.com/th/id/OIP.ZkOmuqOWNqKDYkMKe2YeAgHaK-?w=204&h=303&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "The Avengers must stop Thanos, an intergalactic warlord, from getting his hands on all the infinity stones. However, Thanos is prepared to go to any lengths to carry out his insane plan.",
+      "year": 2018,
+      "genre": [
+        "Action",
+        "Adventure",
+        "superhero"
+      ],
+      "trailer": "https://www.youtube.com/embed/6ZfuNTqbHE8",
+      "imdb_rating": 8.4,
+      "isWatched": false
+    },
+    {
+      "id": 1,
+      "title": "Avatar",
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/16625437697033_405x594.jpg",
+      "synopsis": "Avatar akan kembali ke layar lebar.Seorang Marinir lumpuh dikirim ke bulan Pandora untuk menjalani misi khusus namun, ia justru dilema antara mengikuti perintah atau melindungi dunia baru yang pelan-pelan ia panggil rumah",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "production": "20th Century Studios",
+      "trailer": "https://www.youtube.com/embed/NZrX_ES93JA",
+      "rating": 8.5,
+      "isWatch": false,
+      "isPrevious": false
+    },
+    {
+      "id": 2,
+      "title": "One Piece Film: Red",
+      "image": "https://m.media-amazon.com/images/M/MV5BNDBhM2IxMzItOTdmZi00NmMzLWFlNTgtN2E2MDRjODU4NzEzXkEyXkFqcGdeQXVyODMyNTM0MjM@._V1_FMjpg_UX1000_.jpg",
+      "synopsis": "Untuk pertama kalinya, Uta - penyanyi paling dicintai akan mengungkapkan dirinya kepada dunia di konser langsungnya. Suara yang ditunggu-tunggu oleh seluruh dunia akan segera bergema.",
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Fantasy"
+      ],
+      "production": "20th Century Studios",
+      "trailer": "https://www.youtube.com/embed/89JWRYEIG-s",
+      "rating": 8.5,
+      "isWatch": false,
+      "isPrevious": false
+    },
+    {
+      "id": 3,
+      "title": "Mencuri Raden Saleh",
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/166004235118479_405x594.jpg",
+      "synopsis": "Piko, mahasiswa seni rupa yang mencari uang dengan memalsukan lukisan untuk membebaskan sang ayah dari penjara tiba-tiba mendapat tawaran mencuri karya maestro Raden Saleh yang dijaga ketat di Istana Negara. Mengikuti rencana, Piko membentuk tim yang berisi Ucup (hacker), Sarah (atlet bela diri), Gofar (mekanik), Tuktuk (pembalap liar) dan Fella (bandar judi kampus). Masing-masing mengincar uang yang ditawarkan sebagai imbalan dari pencurian tersebut.     Pelaksanaan rencana mereka dihadapkan dengan begitu banyak rintangan yang berpeluang merenggut hal-hal berharga yang dimiliki; hubungan percintaan, persahabatan, hingga keluarga mereka. Di tengah upaya melancarkan misi pencurian penuh risiko tersebut, mereka tidak tahu bahwa ada ancaman besar di balik pencurian lukisan tersebut.",
+      "genre": [
+        "Drama,Action"
+      ],
+      "production": "20th Century Studios",
+      "trailer": "https://www.youtube.com/embed/DN3sRz_veBU",
+      "rating": 8.5,
+      "isWatch": false,
+      "isPrevious": false
+    },
+    {
+      "id": 4,
+      "title": "The Shawshank Redemption",
+      "image": "https://th.bing.com/th/id/OIP.w0SK_ZRdaWbnC2goV4kbYAHaLH?w=115&h=180&c=7&r=0&o=5&pid=1.7",
+      "year": 1994,
+      "synopsis": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "genre": [
+        "Drama"
+      ],
+      "trailer": "",
+      "rating": 9.3,
+      "isWatched": false,
+      "isPrevious": false
+    },
+    {
+      "id": 5,
+      "title": "The Godfather",
+      "image": "https://th.bing.com/th/id/OIP._5fxLczZe-Orf76zbPUWSAHaLH?w=120&h=180&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "genre": [
+        "Crime",
+        "Drama"
+      ],
+      "trailer": "",
+      "runtime": 175,
+      "rating": 9.2,
+      "isWatched": false
+    },
+    {
+      "id": 6,
+      "title": "The Dark Knight",
+      "image": "https://th.bing.com/th/id/OIP.NN9rKH-vZbFgtH4FuoW7OwHaLH?w=115&h=180&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "year": 2008,
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "trailer": "https://www.youtube.com/embed/EXeTwQWrcwY",
+      "rating": 9,
+      "isWatched": false
+    },
+    {
+      "id": 7,
+      "title": "The Dark Knight Rises",
+      "image": "https://th.bing.com/th/id/OIP.D7tKNbnOXs-jFkXVKkq8pQHaLH?w=131&h=196&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "Bane, an imposing terrorist, attacks Gotham City and disrupts its eight-year-long period of peace. This forces Bruce Wayne to come out of hiding and don the cape and cowl of Batman again.",
+      "year": 2008,
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "trailer": "https://www.youtube.com/embed/GokKUqLcvD8",
+      "imdb_rating": 9,
+      "isWatched": false
+    },
+    {
+      "id": 8,
+      "title": "Batman Begins",
+      "image": "https://th.bing.com/th/id/OIP.yFTkE2zLgrXuK1nTYLqBZAHaJ3?w=138&h=184&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "After witnessing his parents' death, Bruce learns the art of fighting to confront injustice. When he returns to Gotham as Batman, he must stop a secret society that intends to destroy the city.",
+      "year": 2008,
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "trailer": "https://www.youtube.com/embed/neY2xVmOfUM",
+      "imdb_rating": 8.2,
+      "isWatched": false
+    },
+    {
+      "id": 9,
+      "title": "Avengers: Endgame",
+      "image": "https://th.bing.com/th/id/OIP.KNfIqaD92jvecpbxNWWQ4wHaJ4?w=139&h=185&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.",
+      "year": 2019,
+      "genre": [
+        "Action",
+        "Adventure",
+        "superhero"
+      ],
+      "trailer": "https://www.youtube.com/embed/TcMBFSGVi1c",
+      "imdb_rating": 8.4,
+      "isWatched": false
+    },
+    {
+      "id": 10,
+      "title": "Avengers: Infinity War",
+      "image": "https://th.bing.com/th/id/OIP.ZkOmuqOWNqKDYkMKe2YeAgHaK-?w=204&h=303&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "The Avengers must stop Thanos, an intergalactic warlord, from getting his hands on all the infinity stones. However, Thanos is prepared to go to any lengths to carry out his insane plan.",
+      "year": 2018,
+      "genre": [
+        "Action",
+        "Adventure",
+        "superhero"
+      ],
+      "trailer": "https://www.youtube.com/embed/6ZfuNTqbHE8",
+      "imdb_rating": 8.4,
+      "isWatched": false
+    }
+  ],
+  "currentWatch": [
+    {
+      "id": 1,
+      "title": "Avatar",
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/16625437697033_405x594.jpg",
+      "synopsis": "Avatar akan kembali ke layar lebar.Seorang Marinir lumpuh dikirim ke bulan Pandora untuk menjalani misi khusus namun, ia justru dilema antara mengikuti perintah atau melindungi dunia baru yang pelan-pelan ia panggil rumah",
+      "genre": [
+        "Action,Adventure,Fantasy"
+      ],
+      "production": "20th Century Studios",
+      "trailer": "https://www.youtube.com/embed/NZrX_ES93JA",
+      "rating": 8.5,
+      "isWatch": false,
+      "isPrevious": false
+    },
+    {
+      "id": 2,
+      "title": "One Piece Film: Red",
+      "image": "https://m.media-amazon.com/images/M/MV5BNDBhM2IxMzItOTdmZi00NmMzLWFlNTgtN2E2MDRjODU4NzEzXkEyXkFqcGdeQXVyODMyNTM0MjM@._V1_FMjpg_UX1000_.jpg",
+      "synopsis": "Untuk pertama kalinya, Uta - penyanyi paling dicintai akan mengungkapkan dirinya kepada dunia di konser langsungnya. Suara yang ditunggu-tunggu oleh seluruh dunia akan segera bergema.",
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Fantasy"
+      ],
+      "production": "20th Century Studios",
+      "trailer": "https://www.youtube.com/embed/89JWRYEIG-s",
+      "rating": 8.5,
+      "isWatch": false,
+      "isPrevious": false
+    }
+  ],
+  "isSuggested": [
+    {
+      "id": 1,
+      "title": "Avatar",
+      "image": "https://media.21cineplex.com/webcontent/gallery/pictures/16625437697033_405x594.jpg",
+      "synopsis": "Avatar akan kembali ke layar lebar.Seorang Marinir lumpuh dikirim ke bulan Pandora untuk menjalani misi khusus namun, ia justru dilema antara mengikuti perintah atau melindungi dunia baru yang pelan-pelan ia panggil rumah",
+      "genre": [
+        "Action,Adventure,Fantasy"
+      ],
+      "production": "20th Century Studios",
+      "trailer": "https://www.youtube.com/embed/NZrX_ES93JA",
+      "rating": 8.5,
+      "isWatch": false,
+      "isPrevious": false
+    },
+    {
+      "id": 2,
+      "title": "One Piece Film: Red",
+      "image": "https://m.media-amazon.com/images/M/MV5BNDBhM2IxMzItOTdmZi00NmMzLWFlNTgtN2E2MDRjODU4NzEzXkEyXkFqcGdeQXVyODMyNTM0MjM@._V1_FMjpg_UX1000_.jpg",
+      "synopsis": "Untuk pertama kalinya, Uta - penyanyi paling dicintai akan mengungkapkan dirinya kepada dunia di konser langsungnya. Suara yang ditunggu-tunggu oleh seluruh dunia akan segera bergema.",
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Fantasy"
+      ],
+      "production": "20th Century Studios",
+      "trailer": "https://www.youtube.com/embed/89JWRYEIG-s",
+      "rating": 8.5,
+      "isWatch": false,
+      "isPrevious": false
+    }
+  ],
+  "isPrevious": [
+    {
+      "id": 6,
+      "title": "The Dark Knight",
+      "image": "https://th.bing.com/th/id/OIP.NN9rKH-vZbFgtH4FuoW7OwHaLH?w=115&h=180&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "year": 2008,
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "trailer": "https://www.youtube.com/embed/EXeTwQWrcwY",
+      "rating": 9,
+      "isWatched": false
+    },
+    {
+      "id": 7,
+      "title": "The Dark Knight Rises",
+      "image": "https://th.bing.com/th/id/OIP.D7tKNbnOXs-jFkXVKkq8pQHaLH?w=131&h=196&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "Bane, an imposing terrorist, attacks Gotham City and disrupts its eight-year-long period of peace. This forces Bruce Wayne to come out of hiding and don the cape and cowl of Batman again.",
+      "year": 2008,
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "trailer": "https://www.youtube.com/embed/GokKUqLcvD8",
+      "imdb_rating": 9,
+      "isWatched": false
+    },
+    {
+      "id": 8,
+      "title": "Batman Begins",
+      "image": "https://th.bing.com/th/id/OIP.yFTkE2zLgrXuK1nTYLqBZAHaJ3?w=138&h=184&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "After witnessing his parents' death, Bruce learns the art of fighting to confront injustice. When he returns to Gotham as Batman, he must stop a secret society that intends to destroy the city.",
+      "year": 2008,
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "trailer": "https://www.youtube.com/embed/neY2xVmOfUM",
+      "imdb_rating": 8.2,
+      "isWatched": false
+    },
+    {
+      "id": 9,
+      "title": "Avengers: Endgame",
+      "image": "https://th.bing.com/th/id/OIP.KNfIqaD92jvecpbxNWWQ4wHaJ4?w=139&h=185&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.",
+      "year": 2019,
+      "genre": [
+        "Action",
+        "Adventure",
+        "superhero"
+      ],
+      "trailer": "https://www.youtube.com/embed/TcMBFSGVi1c",
+      "imdb_rating": 8.4,
+      "isWatched": false
+    },
+    {
+      "id": 10,
+      "title": "Avengers: Infinity War",
+      "image": "https://th.bing.com/th/id/OIP.ZkOmuqOWNqKDYkMKe2YeAgHaK-?w=204&h=303&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "The Avengers must stop Thanos, an intergalactic warlord, from getting his hands on all the infinity stones. However, Thanos is prepared to go to any lengths to carry out his insane plan.",
+      "year": 2018,
+      "genre": [
+        "Action",
+        "Adventure",
+        "superhero"
+      ],
+      "trailer": "https://www.youtube.com/embed/6ZfuNTqbHE8",
+      "imdb_rating": 8.4,
+      "isWatched": false
+    }
+  ],
+  "watchlist": [
+    {
+      "id": 2,
+      "title": "One Piece Film: Red",
+      "image": "https://m.media-amazon.com/images/M/MV5BNDBhM2IxMzItOTdmZi00NmMzLWFlNTgtN2E2MDRjODU4NzEzXkEyXkFqcGdeQXVyODMyNTM0MjM@._V1_FMjpg_UX1000_.jpg",
+      "synopsis": "Untuk pertama kalinya, Uta - penyanyi paling dicintai akan mengungkapkan dirinya kepada dunia di konser langsungnya. Suara yang ditunggu-tunggu oleh seluruh dunia akan segera bergema.",
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Fantasy"
+      ],
+      "production": "20th Century Studios",
+      "trailer": "https://www.youtube.com/embed/89JWRYEIG-s",
+      "rating": 8.5,
+      "isWatch": false,
+      "isPrevious": false
+    },
+    {
+      "id": 6,
+      "title": "The Dark Knight",
+      "image": "https://th.bing.com/th/id/OIP.NN9rKH-vZbFgtH4FuoW7OwHaLH?w=115&h=180&c=7&r=0&o=5&pid=1.7",
+      "synopsis": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "year": 2008,
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "trailer": "https://www.youtube.com/embed/EXeTwQWrcwY",
+      "rating": 9,
+      "isWatched": false
+    }
+  ]
+}
