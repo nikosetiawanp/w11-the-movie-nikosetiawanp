@@ -7,20 +7,18 @@ const movieTrailer = document.getElementById("movie-trailer");
 const movieGenre = document.getElementById("movie-genre");
 const moviePoster = document.getElementById("movie-poster");
 const watchlistButton = document.getElementById("watchlist-button");
+const addToWatchListButton = document.getElementById("add-to-watchlist-button");
 
-console.log(movieID);
-
-const loadMovieDetail = () => {
+const showMovieDetail = () => {
   fetch(API_ENDPOINT)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data.genre);
       movieTitle.innerHTML = `${data.title}`;
       movieSynopsis.innerHTML = `${data.synopsis}`;
       moviePoster.innerHTML = `
       <img class="object-cover w-full h-full" src="${data.image}" alt="${data.title}">
       `;
-      movieTrailer.innerHTML = `<embed class="rounded-[20px] object-cover w-full h-full " src="${data.trailer}">`;
+      movieTrailer.innerHTML = `<embed class="rounded-[20px] object-cover w-full min-h-[500px] aspect-video" src="${data.trailer}">`;
       movieRating.innerHTML = `⭐ ${data.rating}/10`;
 
       for (let i = 0; i < data.genre.length; i++) {
@@ -32,10 +30,44 @@ const loadMovieDetail = () => {
       }
     });
 };
-loadMovieDetail();
+showMovieDetail();
 
-// fetch(API_ENDPOINT)
-//   .then((response) => response.json)
-//   .then((data) => {
-//     console.log(data);
-//   });
+const loadToLocalStorage = () => {
+  fetch(API_ENDPOINT)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      localStorage.setItem("movieTitle", `${data.title}`); //title
+      localStorage.setItem("movieImage", `${data.image}`); //image
+      localStorage.setItem("movieSynopsis", `${data.synopsis}`); //synopsis
+      localStorage.setItem("movieGenre", `${data.genre}`); //genre
+      localStorage.setItem("movieProduction", `${data.production}`);
+      localStorage.setItem("movieTrailer", `${data.trailer}`); //trailer
+      localStorage.setItem("movieRating", `${data.rating}`); //rating
+      localStorage.setItem("movieYear", `${data.year}`); //year
+    });
+};
+loadToLocalStorage();
+
+const addToWatchlist = () => {
+  fetch("http://localhost:3000/watchlist", {
+    method: "POST",
+    body: JSON.stringify({
+      id: movieID,
+      title: localStorage.getItem("movieTitle"),
+      image: localStorage.getItem("movieImage"),
+      synopsis: localStorage.getItem("movieSynopsis"),
+      genre: localStorage.getItem("movieGenre"),
+      production: localStorage.getItem("movieProduction"),
+      trailer: localStorage.getItem("movieTrailer"),
+      rating: localStorage.getItem("movieRating"),
+      year: localStorage.getItem("movieYear"),
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8",
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => alert("Added to watchlist"));
+};
+addToWatchListButton.addEventListener("click", addToWatchlist);
