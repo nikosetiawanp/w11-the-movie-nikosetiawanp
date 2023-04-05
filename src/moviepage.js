@@ -68,6 +68,6 @@ const addToWatchlist = () => {
     },
   })
     .then((response) => response.json())
-    .then((data) => alert("Added to watchlist"));
+    .then((data) => alert("Successfully added to watchlist"));
 };
 addToWatchListButton.addEventListener("click", addToWatchlist);
