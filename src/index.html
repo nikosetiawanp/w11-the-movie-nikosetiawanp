@@ -17,7 +17,7 @@
     <!-- Container -->
     <div class="flex flex-col items-start justify-center w-[425px] p-8 lg:p-4">
       <h1
-        class="text-[50px] md:text-[70px] font-bold mb-6"
+        class="text-[50px] md:text-[70px] font-bold mb-6 text"
         style="font-family: Poppins"
       >
         The <br />
@@ -37,17 +37,19 @@
           placeholder="Password"
           id="password-input"
         />
-        <button
-          class="w-full h-14 text-2xl font-bold text-white bg-[#37C6F3] active:bg-[#37aef3] rounded-[20px] mt-8 mb-3"
-          id="button-submit"
-        >
-          Login
-        </button>
       </form>
+      <button
+        class="w-full h-14 text-2xl font-bold text-white bg-[#37C6F3] active:bg-[#37aef3] rounded-[20px] mt-12 mb-3"
+        type="submit"
+        id="login-button"
+      >
+        Login
+      </button>
       <span class="text-[#6D6D6D] font-md ml-4"
         >You don't have a account?
         <a href="./register.html" class="font-bold">SignUp</a></span
       >
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>

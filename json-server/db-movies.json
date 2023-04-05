@@ -29,6 +29,12 @@
       "password": "cihuy123",
       "email": "cihuy123@gmail.com",
       "id": 5
+    },
+    {
+      "username": "Niko",
+      "email": "nikosetiawanp@gmail.com",
+      "password": "Niko123",
+      "id": 6
     }
   ],
   "movies": [
