@@ -18,7 +18,7 @@ const showMovieDetail = () => {
       moviePoster.innerHTML = `
       <img class="object-cover w-full h-full" src="${data.image}" alt="${data.title}">
       `;
-      movieTrailer.innerHTML = `<embed class="rounded-[20px] object-cover w-full min-h-[500px] aspect-video" src="${data.trailer}">`;
+      movieTrailer.innerHTML = `<embed class="rounded-[20px] aspect-video w-full h-full" src="${data.trailer}">`;
       movieRating.innerHTML = `⭐ ${data.rating}/10`;
 
       for (let i = 0; i < data.genre.length; i++) {
