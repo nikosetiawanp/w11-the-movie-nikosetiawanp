@@ -9,7 +9,6 @@ const loadCurrentlyWatching = () => {
   fetch(API_ENDPOINT + "currentWatch")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       currentlyWatching.innerHTML = "";
       for (let i = 0; i < data.length; i++) {
         currentlyWatching.innerHTML += `
@@ -39,7 +38,6 @@ const loadPreviouslyWatched = () => {
   fetch(API_ENDPOINT + "isPrevious")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       previouslyWatched.innerHTML = "";
       for (let i = 0; i < data.length; i++) {
         previouslyWatched.innerHTML += `
@@ -69,7 +67,6 @@ const loadSuggestedToWatch = () => {
   fetch(API_ENDPOINT + "isSuggested")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       suggestedToWatch.innerHTML = "";
       for (let i = 0; i < data.length; i++) {
         suggestedToWatch.innerHTML += `

@@ -1,3 +1,5 @@
+const API_ENDPOINT_MOVIES = `http://localhost:3000/movies/`;
+
 const searchButton = document.getElementById("search-button");
 const plusButton = document.getElementById("plus-button");
 const wishlistButon = document.getElementById("wishlist-button");
@@ -28,12 +30,26 @@ const closeSearchMenu = () => {
 const searchMovie = () => {
   searchMenu.classList.replace("hidden", "flex");
   searchResult.classList.replace("hidden", "grid");
+
+  fetch(API_ENDPOINT_MOVIES)
+    .then((response) => response.json())
+    .then((data) => {
+      let filteredResult = data.filter((e) =>
+        e.title.toLowerCase().includes(searchInput.value.toLowerCase())
+      );
+      searchResult.innerHTML = "";
+      for (let i = 0; i < filteredResult.length; i++) {
+        searchResult.innerHTML = `
+        <a
+        class="bg-gray-300 min-w-[155px] min-h-[235px] rounded-[20px] overflow-hidden"
+        href="#"
+      ><img src="${filteredResult[i].image}" alt=""></a>
+        `;
+      }
+    });
 };
 
-// Mobile
-// click magnifier to reveal search bar
 searchButton.addEventListener("click", revealSearchMenu);
-// type to search
 searchInput.addEventListener("input", searchMovie);
-// close the search
 plusButton.addEventListener("click", closeSearchMenu);
+searchInput.addEventListener("input", searchMovie);
