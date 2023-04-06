@@ -39,7 +39,7 @@ const searchMovie = () => {
       );
       searchResult.innerHTML = "";
       for (let i = 0; i < filteredResult.length; i++) {
-        searchResult.innerHTML = `
+        searchResult.innerHTML += `
         <a
         class="bg-gray-300 min-w-[155px] min-h-[235px] rounded-[20px] overflow-hidden"
         href="#"
