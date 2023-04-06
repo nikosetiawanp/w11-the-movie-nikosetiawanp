@@ -38,16 +38,49 @@ const searchMovie = () => {
         e.title.toLowerCase().includes(searchInput.value.toLowerCase())
       );
       searchResult.innerHTML = "";
+
       for (let i = 0; i < filteredResult.length; i++) {
-        searchResult.innerHTML += `
+        if (searchInput.value === "") {
+          searchMenu.classList.replace("flex", "hidden");
+          searchResult.classList.replace("grid", "hidden");
+        } else {
+          searchResult.innerHTML += `
         <a
-        class="bg-gray-300 min-w-[155px] min-h-[235px] rounded-[20px] overflow-hidden"
+        class="min-w-[155px] min-h-[235px] max-w-[155px] rounded-[20px] relative overflow-hidden"
         href="#"
-      ><img src="${filteredResult[i].image}" alt=""></a>
+        ><img
+          class="w-[100%] object-cover h-[235px] rounded-[20px]"
+          src="${filteredResult[i].image}"
+          alt="${filteredResult[i]}"
+        />
+        <p
+        class="text-white/0 hover:text-white hover:bg-black/70 text-5xl font-bold absolute top-0 flex justify-center items-center w-[100%] h-[100%]"
+        id ="${filteredResult[i].id}"
+        onclick="goToMovieDetail(this)"
+        >${filteredResult[i].rating * 10}% </p>
+        </a>
         `;
+        }
       }
     });
 };
+
+// const searchMovie = () => {
+//   searchMenu.classList.replace("hidden", "flex");
+//   searchResult.classList.replace("hidden", "grid");
+
+//   fetch(API_ENDPOINT_MOVIES)
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log(data);
+//       let filteredResult = data.filter((movie) => {
+//         return movie.title
+//           .toLowerCase()
+//           .includes(searchInput.value.toLowerCase());
+//       });
+//     });
+//   console.log(filteredResult);
+// };
 
 searchButton.addEventListener("click", revealSearchMenu);
 searchInput.addEventListener("input", searchMovie);

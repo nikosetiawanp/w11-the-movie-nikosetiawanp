@@ -36,7 +36,6 @@ const loadToLocalStorage = () => {
   fetch(API_ENDPOINT)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       localStorage.setItem("movieTitle", `${data.title}`); //title
       localStorage.setItem("movieImage", `${data.image}`); //image
       localStorage.setItem("movieSynopsis", `${data.synopsis}`); //synopsis
