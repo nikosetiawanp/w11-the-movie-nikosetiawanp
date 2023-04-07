@@ -103,22 +103,6 @@ const searchMovieMobile = () => {
       }
     });
 };
-// const searchMovie = () => {
-//   searchMenu.classList.replace("hidden", "flex");
-//   searchResult.classList.replace("hidden", "grid");
-
-//   fetch(API_ENDPOINT_MOVIES)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       console.log(data);
-//       let filteredResult = data.filter((movie) => {
-//         return movie.title
-//           .toLowerCase()
-//           .includes(searchInput.value.toLowerCase());
-//       });
-//     });
-//   console.log(filteredResult);
-// };
 
 searchButton.addEventListener("click", revealSearchMenu);
 plusButton.addEventListener("click", closeSearchMenu);

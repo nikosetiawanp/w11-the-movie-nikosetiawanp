@@ -13,8 +13,9 @@
   </head>
   <body class="font-['Roboto'] md:bg-[#EBEAEA]">
     <!-- Nav -->
+    <!-- Nav -->
     <nav
-      class="sticky top-0 flex justify-between items-center md:items-start h-[185px] w-full bg-white md:bg-[#EBEAEA] p-5 pb-0 md:px-20 md:pt-12 gap-8"
+      class="sticky top-0 flex justify-between items-center md:items-start h-[185px] bg-white md:bg-[#EBEAEA] p-5 pb-0 md:px-20 md:pt-12 gap-8 z-20"
     >
       <h1 class="text-[30px] font-bold" style="font-family: Poppins">
         The <br />
@@ -58,13 +59,16 @@
         >
           <img class="h-5" src="../assets/Plus.svg" alt="magnifying-glass" />
         </button>
-
+        <!-- Desktop Watchlist Button -->
         <a href="./watchlist.html">
           <button
             class="hidden justify-center items-center text-xl font-bold bg-[#D9D9D9] w-52 h-14 rounded-[20px] md:flex"
-            id="watchlist-button"
           >
-            <img class="h-5" src="../assets/bookmark.svg" alt="watchlist" />
+            <img
+              class="h-5"
+              src="../assets/bookmark.svg"
+              alt="magnifying-glass"
+            />
             &nbsp; Watchlist
           </button>
         </a>
@@ -73,20 +77,16 @@
     <!-- Search Mobile -->
     <div
       id="search-menu"
-      class="hidden flex-col bg-white md:bg-[#EBEAEA] justify-start items-center p-5 md:p-20"
+      class="hidden flex-col bg-white md:bg-[#EBEAEA] justify-start md:items-center p-5 md:px-20"
     >
       <!-- Search Bar Mobile -->
       <input
         type="text"
         class="block md:hidden justify-center items-center text-center text-xl text-black placeholder:text-black w-full max-w-[630px] bg-[#D9D9D9] h-14 rounded-[20px]"
         placeholder="Search a movie or a series"
-        id="search-input"
+        id="search-input-mobile"
       />
-      <!-- Search Result Mobile & Desktop-->
-      <div
-        id="search-result"
-        class="grid-cols-2 flex flex-wrap gap-5 py-10"
-      ></div>
+      <div id="search-result" class="flex flex-wrap gap-5 py-10"></div>
     </div>
 
     <!-- Title and Watchlist Button -->
