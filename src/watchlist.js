@@ -5,7 +5,6 @@ const loadWatchList = () => {
   fetch(API_ENDPOINT + "watchlist")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       watchlist.innerHTML = "";
       for (let i = 0; i < data.length; i++) {
         watchlist.innerHTML += `
@@ -19,6 +18,8 @@ const loadWatchList = () => {
       />
       <p
       class="text-white/0 hover:text-white hover:bg-black/70 text-5xl font-bold absolute top-0 flex justify-center items-center w-[100%] h-[100%]"
+      id ="${data[i].id}"
+      onclick="goToMovieDetail(this)"
     >
       ${data[i].rating * 10}%
     </p>
@@ -28,3 +29,9 @@ const loadWatchList = () => {
     });
 };
 loadWatchList();
+
+let goToMovieDetail = (e) => {
+  const movieID = e.getAttribute("id");
+  localStorage.setItem("movieID", `${movieID}`);
+  window.location.href = "./moviepage.html";
+};
