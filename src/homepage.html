@@ -97,7 +97,7 @@
       <section class="mb-10 md:w-full overflow-x-hidden col-start-1 col-end-2">
         <h2 class="text-xl font-medium">Currently Watching</h2>
         <div
-          class="flex flex-wrap gap-5 py-4 scrollbar-hide"
+          class="flex flex-wrap gap-5 py-4 md:flex-nowrap md:overflow-x-scroll touch-pan-x scrollbar-hide"
           id="currently-watching"
         >
           <!-- loadCurrentlyWatching -->
@@ -108,7 +108,10 @@
         class="mb-10 md:py-2 md:order-last col-start-1 col-end-3 overflow-x-hidden"
       >
         <h2 class="text-xl font-medium">Previously Watched</h2>
-        <div class="flex flex-wrap gap-5 py-4" id="previously-watched">
+        <div
+          class="flex flex-wrap gap-5 py-4 md:flex-nowrap md:overflow-x-scroll touch-pan-x md:scrollbar-hide"
+          id="previously-watched"
+        >
           <!-- loadPreviouslyWatched() -->
         </div>
       </section>
@@ -116,7 +119,7 @@
       <section class="mb-10 md:w-full overflow-x-hidden col-start-2 col-end-3">
         <h2 class="text-xl font-medium">Suggested To Watch</h2>
         <div
-          class="flex flex-wrap gap-5 py-4 touch-pan-x scrollbar-hide"
+          class="flex flex-wrap gap-5 py-4 md:flex-nowrap md:overflow-x-scroll touch-pan-x scrollbar-hide"
           id="suggested-to-watch"
         >
           <!-- loadSuggestedToWatch() -->
